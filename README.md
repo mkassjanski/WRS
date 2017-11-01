@@ -7,6 +7,9 @@
 
 **Web RPG Session** (WRS) jest pomocnicza aplikacją webową do prowadzenia sesji RPG.
 
+
+[WRS](https://wrpgs.herokuapp.com/).
+
 TODO:
 - [ ] przygotowanie platformy do implementacji aplikacji
 - [ ] stworzenie podstawowych klas w aplikacji i relacji w bazie danych
