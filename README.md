@@ -1,29 +1,20 @@
-<<<<<<< HEAD
-# README
+## Web RPG Session (WRS)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+| Wersja Ruby   | Wersja Rails  | Baza danych  |
+|:-------------:|:-------------:|:-------------:|
+| 2.3.3         | 5.0.2         |SQLite (development)|
+|               |               |PostgreSQL (production)|
 
-Things you may want to cover:
+**Web RPG Session** (WRS) jest pomocnicza aplikacją webową do prowadzenia sesji RPG.
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-=======
-# WRS
-Edit
->>>>>>> origin/master
+TODO:
+- [] przygotowanie platformy do implementacji aplikacji
+- [] stworzenie podstawowych klas w aplikacji i relacji w bazie danych
+- [] rejestracja/logowanie
+- [] zarządzanie kontem
+- [] dodanie pokoju
+- [] implementacja systemu sesji użytkownika
+- [] dodanie opcji rysowania
+- [] stworzenie chatu
+- [] testy aplikacji
+- [] publikacja na serwerze
