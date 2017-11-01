@@ -11,13 +11,16 @@
 [WRS](https://wrpgs.herokuapp.com/).
 
 TODO:
-- [ ] przygotowanie platformy do implementacji aplikacji
+- [x] przygotowanie platformy do implementacji aplikacji
 - [ ] stworzenie podstawowych klas w aplikacji i relacji w bazie danych
 - [ ] rejestracja/logowanie
 - [ ] zarządzanie kontem
+- [ ] role
+- [ ] stworzenie wstępnego wygladu
 - [ ] dodanie pokoju
 - [ ] implementacja systemu sesji użytkownika
 - [ ] dodanie opcji rysowania
 - [ ] stworzenie chatu
+- [ ] ostateczny wygląd
 - [ ] testy aplikacji
 - [ ] publikacja na serwerze
