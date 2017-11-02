@@ -1,11 +1,29 @@
-<p>
-  <strong>Title:</strong>
-  <%= @room.title %>
-</p>
+<h2>Show room</h2>
+<div class="container">
+  <table class="table table-bordered table-striped">
+     <tr>
+       <td>
+         <small>Title</small>
+       </td>
+     </tr>
+     <tr>
+       <td>
+         <%= @room.title %>
+       </td>
+     </tr>
 
-<p>
-  <strong>Text:</strong>
-  <%= @room.text %>
-</p>
-
-<%= link_to 'Back', rooms_path %>
+     <tr>
+       <td>
+         <small>Text</small>
+       </td>
+     </tr>
+     <tr>
+       <td>
+         <%= @room.text %>
+       </td>
+     </tr>
+   </table>
+   <div class="form-group">
+       <%= link_to "", rooms_path, class: "btn btn-default btn-circle btn-outline glyphicon glyphicon-arrow-left" %>
+   </div>
+</div>

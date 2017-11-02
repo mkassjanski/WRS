@@ -1,16 +1,34 @@
 
-<%= form_with scope: :room, url: rooms_path, local: true do |form| %>
-  <p>
-    <%= form.label :title %><br>
-    <%= form.text_field :title %>
-  </p>
+<div class="container">
+  <h2>Add new room</h2>
+<%= form_for :room, url: rooms_path do |f| %>
 
-  <p>
-    <%= form.label :text %><br>
-    <%= form.text_area :text %>
-  </p>
 
-  <p>
-    <%= form.submit %>
-  </p>
+
+<div class="form-group">
+  <%= f.label :title, class: "col-sm-2 control-label" %>
+  <div class="col-sm-10">
+    <%= f.text_field :title, class: "form-control opacity" %>
+    </br>
+  </div>
+</div>
+
+<div class="form-group">
+  <%= f.label :text, class: "col-sm-2 control-label" %>
+  <div class="col-sm-10">
+    <%= f.text_field :text, class: "form-control opacity" %>
+    </br>
+  </div>
+</div>
+
+<div class="form-group">
+			<div class="text-center">
+
+  <div class="form-group">
+      <button type="submit" class="btn btn-success btn-circle btn-outline glyphicon glyphicon-plus"></button>
+      <%= link_to "", rooms_path, class: "btn btn-default btn-circle btn-outline glyphicon glyphicon-arrow-left" %>
+</div>
+  </div>
+  </div>
+</div>
 <% end %>
