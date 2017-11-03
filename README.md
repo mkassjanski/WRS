@@ -13,7 +13,7 @@
 TODO:
 - [x] przygotowanie platformy do implementacji aplikacji
 - [ ] stworzenie podstawowych klas w aplikacji i relacji w bazie danych
-- [ ] rejestracja/logowanie
+- [x] rejestracja/logowanie
 - [ ] zarządzanie kontem
 - [ ] role
 - [ ] stworzenie wstępnego wygladu
