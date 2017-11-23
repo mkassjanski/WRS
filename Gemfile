@@ -37,6 +37,7 @@ gem 'jbuilder', '~> 2.5'
 # gem 'redis', '~> 3.0'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
+
 ## boostrap for custom look
 gem 'bootstrap-sass', '~> 3.2.0'
 gem 'autoprefixer-rails'
