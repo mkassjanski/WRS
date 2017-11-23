@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Wrs</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link rel="stylesheet" href="https://bootswatch.com/flatly/bootstrap.min.css" media="screen">
+    <link rel="stylesheet" href="https://bootswatch.com/assets/css/custom.min.css">
+    <% unless flash.empty? %>
+<script type="text/javascript">
+    <% flash.each do |f| %>
+  <% type = f[0].to_s.gsub('alert', 'error').gsub('notice', 'info') %>
+   toastr['<%= type %>']('<%= f[1] %>');
+     <% end %>
+     </script>
+<% end %>
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-default navbar-fixed-top">
+          <div class="container">
+            <div class="navbar-header">
+              <a href="/" class="navbar-brand">WRS</a>
+              <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+            </div>
+            <div class="navbar-collapse collapse" id="navbar-main">
+              <ul class="nav navbar-nav">
+                <li>
+                  <a href="/" class="" >Home</a>
+                </li>
+                <li>
+                  <a href="/rooms" class="">Rooms</a>
+                </li>
+                  </ul>
+               <ul class="nav navbar-nav navbar-right">
+                 <% if user_signed_in? %>
+                 <li><%= link_to 'Edit profile', edit_user_registration_path,  class: "" %></li>
+                 <li><%= link_to 'Log out', destroy_user_session_path, class: "",  :method => :delete %></li>
+               <% else %>
+                 <li><%= link_to 'Log in', new_user_session_path, class: "" %></li>
+                 <li><%= link_to 'Sign up', new_user_registration_path, class: "" %></li>
+                 <% end %>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <%= yield %>
+          <div class="container">
+   <footer>
+       <div class="row">
+         <div class="col-lg-12">
+
+           <p>Projekt Zespołowy - 2017</a>.
+           <p>Based on <a href="http://getbootstrap.com" rel="nofollow">Bootstrap</a>. Icons from <a href="http://fortawesome.github.io/Font-Awesome/" rel="nofollow">Font Awesome</a>. Web fonts from <a href="http://www.google.com/webfonts" rel="nofollow">Google</a>.</p>
+
+         </div>
+       </div>
+
+     </footer>
+</div>
+  </body>
+</html>
