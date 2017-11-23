@@ -1,6 +1,5 @@
 class RoomsController < ApplicationController
-  load_and_authorize_resource
-
+ 
   def index
     @rooms = Room.all
   end
