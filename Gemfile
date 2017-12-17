@@ -14,13 +14,18 @@ gem 'rails', '~> 5.1.4'
 gem 'puma', '~> 3.0'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
+gem 'devise'
+gem 'toastr-rails'
+gem 'remotipart', github: 'mshibuya/remotipart'
+gem 'rails_admin', '>= 1.0.0.rc'
+gem 'cancancan'
+gem 'load_and_authorize_resource'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
-gem 'bcrypt',         '3.1.11'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
@@ -32,6 +37,7 @@ gem 'jbuilder', '~> 2.5'
 # gem 'redis', '~> 3.0'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
+
 ## boostrap for custom look
 gem 'bootstrap-sass', '~> 3.2.0'
 gem 'autoprefixer-rails'
