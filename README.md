@@ -12,13 +12,13 @@
 
 TODO:
 - [x] przygotowanie platformy do implementacji aplikacji
-- [ ] stworzenie podstawowych klas w aplikacji i relacji w bazie danych
-- [ ] rejestracja/logowanie
-- [ ] zarządzanie kontem
-- [ ] role
-- [ ] stworzenie wstępnego wygladu
-- [ ] dodanie pokoju
-- [ ] implementacja systemu sesji użytkownika
+- [x] stworzenie podstawowych klas w aplikacji i relacji w bazie danych
+- [x] rejestracja/logowanie
+- [x] zarządzanie kontem
+- [x] role
+- [x] stworzenie wstępnego wygladu
+- [x] dodanie pokoju
+- [x] implementacja systemu sesji użytkownika
 - [ ] dodanie opcji rysowania
 - [ ] stworzenie chatu
 - [ ] ostateczny wygląd
