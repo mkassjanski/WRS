@@ -13,7 +13,6 @@
                       <td><%= room.title %></td>
                       <td><%= room.text %></td>
                       <td class="text-center"> <%= link_to "", room_path(room), class: "btn btn-default btn-circle btn-outline glyphicon glyphicon-search" %>
-                      <%= link_to "", edit_room_path(room), class: "btn btn-default btn-circle btn-outline glyphicon glyphicon-pencil" %>
                       <%= link_to "", room_path(room) , method: :delete, class: "btn btn-default btn-circle btn-outline glyphicon glyphicon-remove" %></td>
                     </tr>
                   <% end %>

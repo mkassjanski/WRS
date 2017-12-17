@@ -18,7 +18,7 @@ TODO:
 - [x] role
 - [x] stworzenie wstępnego wygladu
 - [x] dodanie pokoju
-- [x] implementacja systemu sesji użytkownika
+- [ ] implementacja systemu sesji użytkownika
 - [ ] dodanie opcji rysowania
 - [ ] stworzenie chatu
 - [ ] ostateczny wygląd

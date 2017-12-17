@@ -15,4 +15,5 @@
 //= require turbolinks
 //= require bootstrap-sprockets
 //= require toastr
+//= require cable
 //= require_tree .

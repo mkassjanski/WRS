@@ -1,11 +1,12 @@
 class RoomsController < ApplicationController
- 
   def index
     @rooms = Room.all
   end
 
   def show
-    @room = Room.find(params[:id])
+    # @room = Room.find(params[:id])
+    @room = Room.includes(:messages).find_by(id: params[:id])
+    @message = Message.new
   end
 
   def new
@@ -13,15 +14,11 @@ class RoomsController < ApplicationController
   end
 
   def create
-    @room = Room.new(room_params)
-
+    @room = current_user.rooms.build(room_params)
     @room.save
     redirect_to @room
   end
 
-  def edit
-  @room = Room.find(params[:id])
-  end
 
   def update
     @room = Room.find(params[:id])
