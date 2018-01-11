@@ -16,4 +16,5 @@
 //= require bootstrap-sprockets
 //= require toastr
 //= require cable
+//= require_tree ./channels
 //= require_tree .
