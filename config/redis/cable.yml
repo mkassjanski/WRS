@@ -3,7 +3,7 @@ production:
   url: redis://localhost:6379/1
 
 development:
-  url: ENV["REDISCLOUD_URL"]
+  url: redis://rediscloud:KAoBbpZQftSeKZI6@redis-13638.c8.us-east-1-4.ec2.cloud.redislabs.com:13638
 
 test:
   url: redis://localhost:6379/3
