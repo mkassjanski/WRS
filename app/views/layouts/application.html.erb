@@ -4,7 +4,15 @@
     <title>Wrs</title>
     <%= csrf_meta_tags %>
     <%= action_cable_meta_tag %>
+    <% unless @picture_id.nil? %>
+    <script>
+    window.image_id = "<%= escape_javascript( @picture_id ) %>";
 
+    window.connected = function () {
+      App.draw.watch("<%= escape_javascript( @picture_id ) %>");
+    }
+    </script>
+    <% end %>
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     <link rel="stylesheet" href="https://bootswatch.com/flatly/bootstrap.min.css" media="screen">

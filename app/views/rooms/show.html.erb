@@ -1,4 +1,15 @@
 <h2>Show room</h2>
+<% provide :title, "Draw | Room: " + @picture_id %>
+<h1>Draw Here!</h1>
+<p>
+<b>Room: <%= @picture_id %></b><br/>
+Draw below for all to see.
+</p>
+<canvas id="easel" width="640" height="480">Your browser does not support canvas</canvas>
+
+<br/>
+
+<button onclick="App.draw.clear('<%= escape_javascript( @picture_id ) %>')">Clear</button>
 <div class="container">
   <table class="table table-bordered table-striped">
      <tr>

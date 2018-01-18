@@ -5,7 +5,10 @@ class RoomsController < ApplicationController
 
   def show
     # @room = Room.find(params[:id])
+
     @room = Room.includes(:messages).find_by(id: params[:id])
+    k = @room.id_to_select
+    @picture_id = k
     @message = Message.new
   end
 
