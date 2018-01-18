@@ -21,7 +21,7 @@ TODO:
 - [x] implementacja systemu sesji użytkownika
 - [x] dodanie opcji rysowania
 - [x] stworzenie chatu
-  -- [ ] naprawa przycisku
+- [ ] naprawa przycisku pisania
 - [ ] ostateczny wygląd
 - [x] testy aplikacji
 - [x] publikacja na serwerze
