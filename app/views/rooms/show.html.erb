@@ -1,44 +1,23 @@
-<h2>Show room</h2>
-<% provide :title, "Draw | Room: " + @picture_id %>
-<h1>Draw Here!</h1>
-<p>
-<b>Room: <%= @picture_id %></b><br/>
-Draw below for all to see.
-</p>
-<canvas id="easel" width="640" height="480">Your browser does not support canvas</canvas>
-
-<br/>
-
-<button onclick="App.draw.clear('<%= escape_javascript( @picture_id ) %>')">Clear</button>
 <div class="container">
-  <table class="table table-bordered table-striped">
-     <tr>
-       <td>
-         <small>Title</small>
-       </td>
-     </tr>
-     <tr>
-       <td>
-         <%= @room.title %>
-       </td>
-     </tr>
+  <h2>Show room</h2>
+  <% provide :title, "Draw | Room: " + @picture_id %>
+  <p>
+  <b>Room: <%= @picture_id %></b><br/>
+  Draw below for all to see.
+  </p>
+  <canvas id="easel" width="640" height="480">Your browser does not support canvas</canvas>
 
-     <tr>
-       <td>
-         <small>Text</small>
-       </td>
-     </tr>
-     <tr>
-       <td>
-         <%= @room.text %>
-       </td>
-     </tr>
-   </table>
-
+  <br/>
+<% if user_signed_in? %>
+  <button onclick="App.draw.clear('<%= escape_javascript( @picture_id ) %>')">Clear</button>
+  <% end %>
+</br>
+</br>
    <div id="messages" data-room-id="<%= @room.id %>">
      <%= render @room.messages %>
    </div>
 
+<% if user_signed_in? %>
     <%= form_for @message, url: '#' do |f| %>
   <div class="form-group">
     <%= f.label :body %>
@@ -48,7 +27,8 @@ Draw below for all to see.
 
   <%= f.submit "Post", class: 'btn btn-primary btn-lg' %>
 <% end %>
-
+<% end %>
+</br>
    <div class="form-group">
        <%= link_to "", rooms_path, class: "btn btn-default btn-circle btn-outline glyphicon glyphicon-arrow-left" %>
    </div>
