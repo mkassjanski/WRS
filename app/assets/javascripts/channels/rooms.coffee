@@ -30,4 +30,4 @@ jQuery(document).on 'turbolinks:load', ->
         App.global_chat.send_message textarea.val(), messages.data('room-id')
         textarea.val('')
       e.preventDefault()
-return false
+      return false
