@@ -22,12 +22,12 @@ TODO:
 - [x] dodanie opcji rysowania
 - [x] stworzenie chatu
 - [x] naprawa przycisku pisania
-- [] ostateczny wygląd
+- [ ] ostateczny wygląd
 - [x] testy aplikacji
 - [x] publikacja na serwerze
 
 Dodatkowo:
-- [ ] dodać nazwa użytkownika w menu
+- [x] dodać nazwa użytkownika w menu
 - [ ] pasek na górze z komunikatem
 - [ ] usuwanie pokoju tylko przez właściciela
 - [ ] odwrócenie kolejności na chacie
