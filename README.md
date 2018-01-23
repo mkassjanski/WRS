@@ -18,9 +18,18 @@ TODO:
 - [x] role
 - [x] stworzenie wstępnego wygladu
 - [x] dodanie pokoju
-- [ ] implementacja systemu sesji użytkownika
-- [ ] dodanie opcji rysowania
-- [ ] stworzenie chatu
+- [x] implementacja systemu sesji użytkownika
+- [x] dodanie opcji rysowania
+- [x] stworzenie chatu
+- [ ] naprawa przycisku pisania
 - [ ] ostateczny wygląd
-- [ ] testy aplikacji
-- [ ] publikacja na serwerze
+- [x] testy aplikacji
+- [x] publikacja na serwerze
+
+Dodatkowo:
+- [ ] dodać nazwa użytkownika w menu
+- [ ] pasek na górze z komunikatem
+- [ ] usuwanie pokoju tylko przez właściciela
+- [ ] odwrócenie kolejności na chacie
+- [ ] lista aktywnych osób w roomie
+- [ ] wyróżnienie właściciela room na liście
