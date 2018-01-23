@@ -70,7 +70,24 @@
             </div>
           </div>
         </div>
+        <% if !user_signed_in? %>
         <div class="container">
+        </br>
+        </br>
+        </br>
+        <div class="progress" style="margin-left:5%;">
+        <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60"
+        aria-valuemin="0" aria-valuemax="100" style="width:100%">
+        <a href="users/sign_in" class="" >Zarejestruj się</a>, aby korzystać z wszystkich możliwości aplikacji!
+        </div>
+        </div>
+        <% end %>
+        <div class="container">
+          <% if user_signed_in? %>
+        </br>
+        </br>
+        </br>
+        <% end %>
           <%= yield %>
           <div class="container">
    <footer>

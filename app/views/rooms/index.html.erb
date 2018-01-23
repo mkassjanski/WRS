@@ -14,7 +14,9 @@
                       <td class="text-left"><%= room.text %></td>
                       <td class="text-center"> <%= link_to "", room_path(room), class: "btn btn-default btn-circle btn-outline glyphicon glyphicon-search" %>
                       <% if user_signed_in? %>
+                          <% if current_user == room.user %>
                       <%= link_to "", room_path(room) , method: :delete, class: "btn btn-default btn-circle btn-outline glyphicon glyphicon-remove" %></td>
+                      <% end %>
                       <% end %>
                     </tr>
                   <% end %>

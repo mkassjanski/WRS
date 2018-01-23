@@ -28,8 +28,8 @@ TODO:
 
 Dodatkowo:
 - [x] dodać nazwa użytkownika w menu
-- [ ] pasek na górze z komunikatem
-- [ ] usuwanie pokoju tylko przez właściciela
+- [x] pasek na górze z komunikatem
+- [x] usuwanie pokoju tylko przez właściciela
 - [ ] odwrócenie kolejności na chacie
 - [ ] lista aktywnych osób w roomie
 - [ ] wyróżnienie właściciela room na liście
